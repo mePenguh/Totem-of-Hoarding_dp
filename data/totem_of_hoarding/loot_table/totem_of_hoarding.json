@@ -1,0 +1,28 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:poisonous_potato",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "!minecraft:consumable": {},
+                                "!minecraft:food": {},
+                                "minecraft:item_model": "totem_of_hoarding:totem_of_hoarding",
+                                "minecraft:item_name": {
+                                    "translate": "item.totem_of_hoarding.totem_of_hoarding"
+                                },
+                                "minecraft:rarity": "uncommon",
+                                "minecraft:max_stack_size": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

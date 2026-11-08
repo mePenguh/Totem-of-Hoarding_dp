@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:entity",
+    "random_sequence": "minecraft:entities/piglin_brute",
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "totem_of_hoarding:totem_of_hoarding"
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

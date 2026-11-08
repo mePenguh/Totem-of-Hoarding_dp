@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "minecraft:nether/find_bastion",
+    "display": {
+        "description": {
+            "translate": "advancements.totem_of_hoarding.use_hoarding_totem.description"
+        },
+        "icon": {
+            "id": "minecraft:poisonous_potato",
+            "components": {
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
+                "minecraft:item_model": "totem_of_hoarding:totem_of_hoarding",
+                "minecraft:item_name": {
+                    "translate": "item.totem_of_hoarding.totem_of_hoarding"
+                },
+                "minecraft:rarity": "uncommon",
+                "minecraft:max_stack_size": 1
+            }
+        },
+        "title": {
+            "translate": "advancements.totem_of_hoarding.use_hoarding_totem.title"
+        }
+    },
+    "sends_telemetry_event": true
+}
