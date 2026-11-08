@@ -1,9 +1,6 @@
 # skip in creative and spectator
 execute if entity @s[gamemode=!survival,gamemode=!adventure] run return run tag @s remove totem_of_hoarding.animation_scheduled
 
-# revoke advanement
-advancement revoke @s only totem_of_hoarding:totem_of_hoarding
-
 # store offhand item
 data remove storage totem_of_hoarding:master offhand_item
 execute unless predicate totem_of_hoarding:has_fake_totem run data modify storage totem_of_hoarding:master offhand_item set from entity @s equipment.offhand
