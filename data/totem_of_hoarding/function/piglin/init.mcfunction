@@ -1,5 +1,5 @@
 ## check if in bastion
-execute if predicate totem_of_hoarding:in_bastion run return run function totem_of_hoarding:piglin/apply_tag
+execute unless predicate totem_of_hoarding:in_bastion run return run function totem_of_hoarding:piglin/apply_tag
 
 ## check position
 data modify storage totem_of_hoarding:master position.pos set from entity @s Pos
