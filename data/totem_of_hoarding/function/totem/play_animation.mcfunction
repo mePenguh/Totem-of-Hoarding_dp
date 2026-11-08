@@ -6,7 +6,7 @@ advancement revoke @s only totem_of_hoarding:totem_of_hoarding
 
 # store offhand item
 data remove storage totem_of_hoarding:master offhand_item
-data modify storage totem_of_hoarding:master offhand_item set from entity @s equipment.offhand
+execute unless predicate totem_of_hoarding:has_fake_totem run data modify storage totem_of_hoarding:master offhand_item set from entity @s equipment.offhand
 
 # play animation
 tag @s add totem_of_hoarding.block_advancement

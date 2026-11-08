@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "minecraft:equipment": {
+            "offhand": {
+                "components": {
+                    "minecraft:item_model": "totem_of_hoarding:totem_of_hoarding"
+                },
+                "items": "minecraft:totem_of_undying"
+            }
+        }
+    }
+}
