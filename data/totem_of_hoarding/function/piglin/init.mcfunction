@@ -22,7 +22,10 @@ tag @s remove totem_of_hoarding.current_main
 execute if data entity @s {PersistenceRequired:1b} run return run function totem_of_hoarding:piglin/apply_tag
 
 ## check data
-execute if data entity @s ticks_since_last_hurt_by_mob run function totem_of_hoarding:piglin/apply_tag
+execute if data entity @s ticks_since_last_hurt_by_mob run return run function totem_of_hoarding:piglin/apply_tag
+
+## chance
+execute unless predicate totem_of_hoarding:piglin_brute_chance run return run function totem_of_hoarding:piglin/apply_tag
 
 ## turn into piglin brute
 function totem_of_hoarding:piglin/turn_into_piglin
