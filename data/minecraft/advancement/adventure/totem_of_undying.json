@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:adventure/kill_a_mob",
+  "criteria": {
+    "used_totem": {
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "entity_tags": {
+                    "all_of": [
+                        "totem_of_hoarding.block_advancement"
+                    ]
+                }
+            }
+        },
+        "item": {
+          "items": [
+            "minecraft:totem_of_undying"
+          ]
+        }
+      },
+      "trigger": "minecraft:used_totem"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.adventure.totem_of_undying.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "id": "minecraft:totem_of_undying"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.adventure.totem_of_undying.title"
+    }
+  },
+  "requirements": [
+    [
+      "used_totem"
+    ]
+  ]
+}

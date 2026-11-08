@@ -6,8 +6,10 @@ data remove storage totem_of_hoarding:master offhand_item
 data modify storage totem_of_hoarding:master offhand_item set from entity @s equipment.offhand
 
 # play animation
+tag @s add totem_of_hoarding.block_advancement
 item replace entity @s weapon.offhand with minecraft:totem_of_undying[minecraft:item_model="totem_of_hoarding:totem_of_hoarding"]
 damage @s 10000 minecraft:dragon_breath
+tag @s remove totem_of_hoarding.block_advancement
 
 # give advancement
 advancement grant @s only totem_of_hoarding:use_hoarding_totem
