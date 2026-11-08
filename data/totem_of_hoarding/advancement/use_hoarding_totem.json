@@ -6,9 +6,12 @@
     },
     "parent": "minecraft:nether/find_bastion",
     "display": {
+        "announce_to_chat": true,
         "description": {
             "translate": "advancements.totem_of_hoarding.use_hoarding_totem.description"
         },
+        "frame": "goal",
+        "hidden": false,
         "icon": {
             "id": "minecraft:poisonous_potato",
             "components": {
@@ -22,6 +25,7 @@
                 "minecraft:max_stack_size": 1
             }
         },
+        "show_toast": true,
         "title": {
             "translate": "advancements.totem_of_hoarding.use_hoarding_totem.title"
         }
